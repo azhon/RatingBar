@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="a_zhon">
+        <!--填充图片-->
+        <attr name="star_img" format="reference" />
+        <!--默认图片-->
+        <attr name="unstar_img" format="reference" />
+        <!--图片宽度-->
+        <attr name="image_width" format="dimension" />
+        <!--图片高度度-->
+        <attr name="image_height" format="dimension" />
+        <!--图片之间的间距-->
+        <attr name="image_padding" format="dimension" />
+        <!--星星总数-->
+        <attr name="star_count" format="integer" />
+        <!--填充的星星数量-->
+        <attr name="star" format="integer" />
+        <!--是否可以点击-->
+        <attr name="clickable" format="boolean" />
+    </declare-styleable>
+</resources>
