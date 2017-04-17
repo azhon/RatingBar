@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RattingBar.iml" filepath="$PROJECT_DIR$/RattingBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RatingBar.iml" filepath="$PROJECT_DIR$/RatingBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
