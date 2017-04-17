@@ -27,11 +27,11 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
      */
     private Drawable unStarDrawable;
     /**
-     * 星星的总数
+     * 图片的总数
      */
     private int starCount;
     /**
-     * 填充的星星数量
+     * 填充的图片数量
      */
     private int star;
     /**
@@ -86,7 +86,7 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
         }
         for (int i = 0; i < starCount; i++) {
             ImageView view = getImageView(context, width, height);
-            //设置ImageView的下标和星星状态
+            //设置ImageView的下标
             view.setTag(i);
             addView(view);
             //可以点击评分
@@ -125,7 +125,7 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
     }
 
     /**
-     * 星星的点击事件
+     * 图片的点击事件
      */
     @Override
     public void onClick(View v) {
@@ -135,7 +135,7 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
     /**
      * 填充图片
      *
-     * @param i 点击的星星下标
+     * @param i 点击的图片下标
      */
     private void fillingImage(int i) {
         for (int j = 0; j < starCount; j++) {
