@@ -138,6 +138,7 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
      * @param i 点击的图片下标
      */
     private void fillingImage(int i) {
+        //首先将所有的背景都设置为默认背景图片
         for (int j = 0; j < starCount; j++) {
             ImageView view = (ImageView) getChildAt(j);
             if (unStarDrawable == null) {
@@ -146,6 +147,7 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
                 view.setImageDrawable(unStarDrawable);
             }
         }
+        //填充选中的等级
         for (int j = 0; j <= i; j++) {
             ImageView view = (ImageView) getChildAt(j);
             if (starDrawable == null) {
