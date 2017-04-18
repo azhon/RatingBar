@@ -1,4 +1,4 @@
-package com.azhong.rattingbar;
+package com.azhong.ratingbar;
 
 import org.junit.Test;
 

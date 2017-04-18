@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.azhong.rattingbar.MainActivity">
+    tools:context="com.azhong.ratingbar.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         android:text="自定义的一个评分控件:"
         android:textSize="16sp" />
 
-    <com.azhong.rattingbar.RatingBar
+    <com.azhong.ratingbar.RatingBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         a_zhon:clickable="true"

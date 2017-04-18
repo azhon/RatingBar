@@ -1,4 +1,4 @@
-package com.azhong.rattingbar;
+package com.azhong.ratingbar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

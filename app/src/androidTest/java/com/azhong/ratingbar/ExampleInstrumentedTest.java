@@ -1,4 +1,4 @@
-package com.azhong.rattingbar;
+package com.azhong.ratingbar;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
