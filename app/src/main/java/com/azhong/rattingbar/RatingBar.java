@@ -181,7 +181,7 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
                 //填充图片
                 fillingImage(star - 1);
             } else {
-                throw new RuntimeException("star填充数量不能大于总数star_count!");
+                throw new RuntimeException("star填充数量不能大于总数starCount!");
             }
         }
     }
