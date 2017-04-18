@@ -2,7 +2,21 @@
 ### 效果图：
 <img src="https://github.com/azhong1011/RatingBar/blob/master/screenshot/rating_bar.gif"/>
 
-### 使用案例：
+### 使用方法：
+1.将aar包拷贝至项目的libs目录
+2.修改项目的build.gradle文件
+```
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+  //......
+   compile(name: 'rating-bar', ext: 'aar')
+}
+```
+3.布局使用
 ```
 <com.azhong.rattingbar.RatingBar
     android:layout_width="match_parent"
