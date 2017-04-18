@@ -176,6 +176,14 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
             throw new RuntimeException("star填充数量不能大于总数starCount");
         }
         this.star = star;
+        if (star != 0) {
+            if (star <= starCount) {
+                //填充图片
+                fillingImage(star - 1);
+            } else {
+                throw new RuntimeException("star填充数量不能大于总数star_count!");
+            }
+        }
     }
 
     /**
@@ -201,23 +209,5 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
      */
     public void setClickable(boolean clickable) {
         this.clickable = clickable;
-    }
-
-    /**
-     * 设置填充的图片
-     *
-     * @param starDrawable 填充图片
-     */
-    public void setStarDrawable(Drawable starDrawable) {
-        this.starDrawable = starDrawable;
-    }
-
-    /**
-     * 设置默认的图片
-     *
-     * @param unStarDrawable 默认图片
-     */
-    public void setUnStarDrawable(Drawable unStarDrawable) {
-        this.unStarDrawable = unStarDrawable;
     }
 }
