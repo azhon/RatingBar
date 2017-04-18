@@ -17,14 +17,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    task makeJar(type: Copy) {
-        delete 'build/libs/azhon.jar'
-        from('build/intermediates/bundles/release/')
-        into('build/libs/')
-        include('classes.jar')
-        rename('classes.jar', 'azhon.jar')
-    }
-    makeJar.dependsOn(build)
 }
 
 dependencies {
