@@ -4,6 +4,7 @@
 
 ### 使用方法：
 1.将aar包拷贝至项目的libs目录
+
 2.修改项目的build.gradle文件
 ```
 repositories {
