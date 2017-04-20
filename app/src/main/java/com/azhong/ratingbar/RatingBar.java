@@ -129,7 +129,9 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
      */
     @Override
     public void onClick(View v) {
-        fillingImage((Integer) v.getTag());
+         Integer index = (Integer) v.getTag();
+         star = index;
+         fillingImage(index);
     }
 
     /**
