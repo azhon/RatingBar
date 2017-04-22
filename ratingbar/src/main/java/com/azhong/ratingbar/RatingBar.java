@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 /*
  * 项目名:    RattingBar
  * 文件名:    RattingBar
- * 创建者:    ZSYr
+ * 创建者:    ZSY
  * 创建时间:  2017/4/16 on 15:26
  * 描述:     TODO 自定义评分控件
  */
@@ -129,9 +129,9 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
      */
     @Override
     public void onClick(View v) {
-         Integer index = (Integer) v.getTag();
-         star = index;
-         fillingImage(index);
+        Integer index = (Integer) v.getTag();
+        star = index;
+        fillingImage(index);
     }
 
     /**
@@ -162,6 +162,8 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
 
     /**
      * 根据手机的分辨率从 dip 的单位 转成为 px(像素)
+     *
+     * @return px
      */
     private int dip2px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
@@ -190,6 +192,8 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
 
     /**
      * 获得当前评分数
+     *
+     * @return 当前星级
      */
     public int getStar() {
         return star;

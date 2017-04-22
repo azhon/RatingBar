@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.azhong.ratingbar.MainActivity">
+    tools:context="com.azhong.test.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         a_zhon:image_height="36dp"
         a_zhon:image_padding="3dp"
         a_zhon:image_width="36dp"
-        a_zhon:star="0"
+        a_zhon:star="2"
         a_zhon:star_count="5"
         a_zhon:star_img="@mipmap/star"
         a_zhon:unstar_img="@mipmap/unstar" />

@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.azhong.rattingbar", appContext.getPackageName());
+        assertEquals("com.azhong.ratingbar.test", appContext.getPackageName());
     }
 }
