@@ -21,6 +21,7 @@ compile 'com.azhon:ratingbar:1.0.0'
     a_zhon:star_img="@mipmap/star"
     a_zhon:unstar_img="@mipmap/unstar" />
 ```
+3.布局属性介绍
 ```
     <!--填充图片-->
     <attr name="star_img" format="reference" />
