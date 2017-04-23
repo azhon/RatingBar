@@ -1,8 +1,8 @@
-### 仿系统(RatingBar)的一个评分控件
-### 效果图：
+### 一：仿系统(RatingBar)的一个评分控件
+### 二：效果图：
 <img src="https://github.com/azhong1011/RatingBar/blob/master/screenshot/rating_bar.gif"/>
 
-### 使用方法：
+### 三：使用方法：
 1.在build.gradle中添加依赖
 ```
 compile 'com.azhon:ratingbar:1.0.0'
@@ -21,7 +21,25 @@ compile 'com.azhon:ratingbar:1.0.0'
     a_zhon:star_img="@mipmap/star"
     a_zhon:unstar_img="@mipmap/unstar" />
 ```
-## LICENSE
+```
+    <!--填充图片-->
+    <attr name="star_img" format="reference" />
+    <!--默认图片-->
+    <attr name="unstar_img" format="reference" />
+    <!--图片宽度-->
+    <attr name="image_width" format="dimension" />
+    <!--图片高度-->
+    <attr name="image_height" format="dimension" />
+    <!--图片之间的间距-->
+    <attr name="image_padding" format="dimension" />
+    <!--图片总数-->
+    <attr name="star_count" format="integer" />
+    <!--填充的图片数量-->
+    <attr name="star" format="integer" />
+    <!--是否可以点击-->
+    <attr name="clickable" format="boolean" />
+```
+## 四：LICENSE
    Copyright [2016-09-21] [阿钟]
 
    Licensed under the Apache License, Version 2.0 (the "License");
