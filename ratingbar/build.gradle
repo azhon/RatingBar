@@ -2,13 +2,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
-def siteUrl = 'https://github.com/azhong1011/RatingBar'   //项目的主页
-def gitUrl = 'https://github.com/azhong1011/RatingBar.git'   //github仓库的地址
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-
-version = "1.0.0"//library的版本号
-group = "com.azhon"
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -42,21 +35,28 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+def siteUrl = 'https://github.com/azhong1011/RatingBar'   //项目的主页
+def gitUrl = 'https://github.com/azhong1011/RatingBar.git'   //github仓库的地址
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+version = "1.0.0"//version
+group = "com.azhon"//groupId
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
     pkg {
-        repo = 'azhon'//自己bintray创建仓库名字
-        name = 'rating-bar'//Library的名字
+        repo = 'azhon'//创建的仓库名字
+        name = 'ratingbar'//artifactId
         websiteUrl = siteUrl
         vcsUrl = gitUrl
-        licenses = ['Apache-2.0']//不能随便写，只能是仓库创建时选择的license type
+        licenses = ['Apache-2.0']//创建仓库时选择的license type
         userOrg = 'azhon' //自己bintray创建的organization名称
         publish = true // 是否是公开项目。
 
         version {
-            name = '1.0'
-            desc = 'A RatingBar.'
+            name = '1.0.0'//版本号
+            desc = 'A RatingBar.'//版本描述
             released = new Date()
             vcsTag = 'v1.0'
             attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
@@ -66,11 +66,10 @@ bintray {
 }
 install {
     repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
         pom {
             project {
                 packaging 'aar'
-                // Add your description here                name 'Pluto Android'
+                //项目描述
                 description 'A RatingBar.'
                 url siteUrl
                 // 填写开源协议
