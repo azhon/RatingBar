@@ -3,7 +3,11 @@
 <img src="https://github.com/azhong1011/RatingBar/blob/master/screenshot/rating_bar.gif"/>
 
 ### 使用方法：
-布局使用
+1.在build.gradle中添加依赖
+```
+compile 'com.azhon:ratingbar:1.0.0'
+```
+2.布局使用
 ```
 <com.azhong.rattingbar.RatingBar
     android:layout_width="match_parent"
