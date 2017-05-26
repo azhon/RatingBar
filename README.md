@@ -1,11 +1,11 @@
 ### 一：仿系统(RatingBar)的一个评分控件
 ### 二：效果图：
-<img src="https://github.com/azhong1011/RatingBar/blob/master/screenshot/rating_bar.gif"/>
+<img src="https://github.com/azhong1011/RatingBar/tree/version-1.1/screenshot/rating_bar_1.1.gif"/>
 
 ### 三：使用方法：
 1.在build.gradle中添加依赖
 ```
-compile 'com.azhon:ratingbar:1.0.0'
+compile 'com.azhon:ratingbar:1.1.0'
 ```
 2.布局使用
 ```
@@ -16,7 +16,7 @@ compile 'com.azhon:ratingbar:1.0.0'
     a_zhon:image_height="36dp"
     a_zhon:image_padding="3dp"
     a_zhon:image_width="36dp"
-    a_zhon:star="0"
+    a_zhon:star="1"
     a_zhon:star_count="5"
     a_zhon:star_img="@mipmap/star"
     a_zhon:unstar_img="@mipmap/unstar" />
@@ -40,7 +40,11 @@ compile 'com.azhon:ratingbar:1.0.0'
     <!--是否可以点击-->
     <attr name="clickable" format="boolean" />
 ```
-## 四：LICENSE
+## 四：Version-1.1描述
+   1.添加滑动手势打分
+
+   2.修复`getStar()`函数返回错误值
+## 五：LICENSE
    Copyright [2016-09-21] [阿钟]
 
    Licensed under the Apache License, Version 2.0 (the "License");
