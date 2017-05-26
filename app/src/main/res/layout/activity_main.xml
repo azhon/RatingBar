@@ -26,7 +26,7 @@
         a_zhon:image_height="36dp"
         a_zhon:image_padding="3dp"
         a_zhon:image_width="36dp"
-        a_zhon:star="2"
+        a_zhon:star="1"
         a_zhon:star_count="5"
         a_zhon:star_img="@mipmap/star"
         a_zhon:unstar_img="@mipmap/unstar" />
