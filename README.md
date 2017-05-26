@@ -44,7 +44,8 @@ compile 'com.azhon:ratingbar:1.1.0'
    1.添加滑动手势打分
 
    2.修复`getStar()`函数返回错误值
-## 五：LICENSE
+## 五：博文链接：http://blog.csdn.net/a_zhon/article/details/70214584
+## 六：LICENSE
    Copyright [2016-09-21] [阿钟]
 
    Licensed under the Apache License, Version 2.0 (the "License");
