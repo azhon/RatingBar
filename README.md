@@ -43,8 +43,8 @@ compile 'com.azhon:ratingbar:1.0.0'
 ## 四：版本更新
 ![](http://i.imgur.com/4FfTrbk.png)
 
-	将分支切换为 version1.1为目前最新代码
-	[https://github.com/azhong1011/RatingBar/tree/version-1.1](https://github.com/azhong1011/RatingBar/tree/version-1.1 "version-1.1")
+   将分支切换为 version1.1为目前最新代码
+   [version1.1](https://github.com/azhong1011/RatingBar/tree/version-1.1)
 ## 五：博文链接：http://blog.csdn.net/a_zhon/article/details/70214584
 
 ## 六：LICENSE
