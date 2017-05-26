@@ -19,6 +19,7 @@
         android:textSize="16sp" />
 
     <com.azhong.ratingbar.RatingBar
+        android:id="@+id/rating_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         a_zhon:clickable="true"
@@ -26,7 +27,15 @@
         a_zhon:image_padding="3dp"
         a_zhon:image_width="36dp"
         a_zhon:star="2"
-        a_zhon:star_count="5"
+        a_zhon:star_count="8"
         a_zhon:star_img="@mipmap/star"
         a_zhon:unstar_img="@mipmap/unstar" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="click me" />
 </LinearLayout>

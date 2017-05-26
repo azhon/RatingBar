@@ -5,8 +5,10 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -17,7 +19,8 @@ import android.widget.LinearLayout;
  * 创建时间:  2017/4/16 on 15:26
  * 描述:     TODO 自定义评分控件
  */
-public class RatingBar extends LinearLayout implements View.OnClickListener {
+public class RatingBar extends LinearLayout implements View.OnClickListener,
+        ViewTreeObserver.OnGlobalLayoutListener {
     /**
      * 填充的图片
      */
@@ -50,6 +53,10 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
      * 图片是否可以点击
      */
     private boolean clickable;
+    /**
+     * 保存每个view相对于ViewGroup的X轴距离
+     */
+    private int viewX[];
 
     public RatingBar(Context context) {
         super(context);
@@ -72,6 +79,8 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
     private void init(Context context, AttributeSet attrs) {
         setOrientation(LinearLayout.HORIZONTAL);
         setGravity(Gravity.CENTER);
+        //设置view加载完成时回调
+        getViewTreeObserver().addOnGlobalLayoutListener(this);
         if (attrs != null) {
             TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.a_zhon);
             starDrawable = array.getDrawable(R.styleable.a_zhon_star_img);
@@ -103,6 +112,16 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
         }
     }
 
+    @Override
+    public void onGlobalLayout() {
+        viewX = new int[starCount];
+        for (int i = 0; i < starCount; i++) {
+            //view相对于ViewGroup的X轴距离
+            int right = getChildAt(i).getRight();
+            viewX[i] = right;
+        }
+    }
+
     /**
      * 创建默认的5个ImageView
      *
@@ -130,7 +149,7 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Integer index = (Integer) v.getTag();
-        star = index;
+        star = index + 1;
         fillingImage(index);
     }
 
@@ -191,10 +210,45 @@ public class RatingBar extends LinearLayout implements View.OnClickListener {
     }
 
     /**
+     * 由于onTouch事件会被它的子View控件所响应。所以我们应在onInterceptTouchEvent拦截事件
+     */
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent e) {
+        switch (e.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                break;
+            case MotionEvent.ACTION_MOVE:
+                //必须要在MOVE中return才有效果，在这里return后UP事件也会被拦截
+                return true;
+            case MotionEvent.ACTION_UP:
+            case MotionEvent.ACTION_CANCEL:
+                break;
+        }
+        return super.onInterceptTouchEvent(e);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        //如果不能点击，那么也不能通过滑动来评分
+        if (!clickable)
+            return false;
+        if (event.getAction() == MotionEvent.ACTION_MOVE) {
+            for (int i = 0; i < viewX.length; i++) {
+                if (event.getX() < viewX[i] && event.getX() > viewX[i] - width) {
+                    fillingImage(i);
+                    star = i + 1;
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
      * 获得当前评分数
      *
      * @return 当前星级
      */
+
     public int getStar() {
         return star;
     }
