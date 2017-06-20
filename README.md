@@ -1,11 +1,6 @@
 
-[csdnsvg]: https://img.shields.io/badge/CSDN-%E9%98%BF%E9%92%9F-brightgreen.svg
-[csdn]: http://blog.csdn.net/a_zhon
 
-[jcentersvg]: https://img.shields.io/badge/jcenter-v1.1.0-ff69b4.svg
-[jcenter]: https://bintray.com/azhon/azhon/rating-bar
-
-[![csdn][csdnsvg]][csdn] [![jcenter][jcentersvg]][jcenter]
+[![Travis](https://img.shields.io/badge/CSDN-阿钟-brightgreen.svg)](http://blog.csdn.net/a_zhon) [![Travis](https://img.shields.io/badge/jcenter-v1.1.0-ff69b4.svg)](https://bintray.com/azhon/azhon/rating-bar)
 
 ### 一：仿系统(RatingBar)的一个评分控件
 ### 二：效果图：
