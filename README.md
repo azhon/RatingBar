@@ -5,7 +5,7 @@
 ### 三：使用方法：
 1.在build.gradle中添加依赖
 ```
-compile 'com.azhon:ratingbar:1.1.0'
+compile 'com.azhon:ratingbar:1.2.0'
 ```
 2.布局使用
 ```
@@ -40,10 +40,10 @@ compile 'com.azhon:ratingbar:1.1.0'
     <!--是否可以点击-->
     <attr name="clickable" format="boolean" />
 ```
-## 四：Version-1.1 更新描述
-   1.添加滑动手势打分
+## 四：Version-1.2 更新描述
+   1.修复setStar(0)无效bug
 
-   2.修复`getStar()`函数返回错误值
+   2.去除多余的v7包
 ## 五：博文链接：http://blog.csdn.net/a_zhon/article/details/70214584
 ## 六：LICENSE
    Copyright [2016-09-21] [阿钟]
