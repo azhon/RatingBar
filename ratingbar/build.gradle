@@ -46,7 +46,7 @@ bintray {
     key = properties.getProperty("bintray.apikey")
     pkg {
         repo = 'azhon'//创建的仓库名字
-        name = 'ratingbar'//packageName
+        name = 'rating-bar'//packageName
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ['Apache-2.0']//创建仓库时选择的license type
