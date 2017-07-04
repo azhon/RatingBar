@@ -44,9 +44,10 @@ compile 'com.azhon:ratingbar:1.0.0'
     <!--是否可以点击-->
     <attr name="clickable" format="boolean" />
 ```
-## 四：所有版本（version-1.1为目前最新代码）
+## 四：所有版本（version-1.2为目前最新代码）
 
    ● [version-1.1](https://github.com/azhong1011/RatingBar/tree/version-1.1)
+   ● [version-1.2](https://github.com/azhong1011/RatingBar/tree/version-1.2)
 ## 五：博文链接：http://blog.csdn.net/a_zhon/article/details/70214584
 
 ## 六：LICENSE
