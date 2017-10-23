@@ -9,7 +9,7 @@
 ### 三：使用方法：
 1.在build.gradle中添加依赖
 ```
-compile 'com.azhon:ratingbar:1.0.0'
+compile 'com.azhon:ratingbar:1.2.0'
 ```
 2.布局使用
 ```
