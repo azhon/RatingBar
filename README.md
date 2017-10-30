@@ -13,7 +13,7 @@ compile 'com.azhon:ratingbar:1.2.0'
 ```
 2.布局使用
 ```
-<com.azhong.rattingbar.RatingBar
+<com.azhong.ratingbar.RatingBar
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     a_zhon:clickable="true"
