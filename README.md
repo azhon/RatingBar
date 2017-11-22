@@ -46,9 +46,9 @@ compile 'com.azhon:ratingbar:1.3.0'
 ```
 ## 四：所有版本（version-1.3为目前最新代码）
 
-- [version-1.1](https://github.com/azhong1011/RatingBar/tree/version-1.1)
-- [version-1.2](https://github.com/azhong1011/RatingBar/tree/version-1.2)
-- [version-1.3](https://github.com/azhong1011/RatingBar/tree/version-1.3)
+- [version-1.1](https://github.com/azhon/RatingBar/tree/version-1.1)
+- [version-1.2](https://github.com/azhon/RatingBar/tree/version-1.2)
+- [version-1.3](https://github.com/azhon/RatingBar/tree/version-1.3)
 
 ## 五：博文链接：http://blog.csdn.net/a_zhon/article/details/70214584
 
