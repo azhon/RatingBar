@@ -41,8 +41,8 @@ compile 'com.azhon:ratingbar:1.3.0'
     <attr name="clickable" format="boolean" />
 ```
 ## 四：Version-1.3 更新描述
-   添加星级改变监听
-   
+   - 添加星级改变监听
+   - `ratingBar.setOnStarChangeListener()`
 ## 五：博文链接：http://blog.csdn.net/a_zhon/article/details/70214584
 ## 六：LICENSE
    Copyright [2017-11-22] [阿钟]
