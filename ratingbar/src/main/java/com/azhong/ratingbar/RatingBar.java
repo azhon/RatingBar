@@ -57,6 +57,10 @@ public class RatingBar extends LinearLayout implements View.OnClickListener,
      * 保存每个view相对于ViewGroup的X轴距离
      */
     private int viewX[];
+    /**
+     * 星级改变监听
+     */
+    private OnChangeListener listenter;
 
     public RatingBar(Context context) {
         super(context);
@@ -177,6 +181,9 @@ public class RatingBar extends LinearLayout implements View.OnClickListener,
                 view.setImageDrawable(starDrawable);
             }
         }
+        if (listenter != null) {
+            listenter.onChange(getStar());
+        }
     }
 
     /**
@@ -273,4 +280,9 @@ public class RatingBar extends LinearLayout implements View.OnClickListener,
     public void setClickable(boolean clickable) {
         this.clickable = clickable;
     }
+
+    public void setOnStarChangeListener(OnChangeListener listener) {
+        this.listenter = listener;
+    }
+
 }

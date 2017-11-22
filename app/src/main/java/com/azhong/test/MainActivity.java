@@ -1,10 +1,12 @@
 package com.azhong.test;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.azhong.ratingbar.OnChangeListener;
 import com.azhong.ratingbar.RatingBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ratingBar.setStar(0);
                 buttonSet.setText(String.valueOf(ratingBar.getStar()));
+            }
+        });
+        ratingBar.setOnStarChangeListener(new OnChangeListener() {
+            @Override
+            public void onChange(int star) {
+                Log.e("TAG", star + "");
             }
         });
 
