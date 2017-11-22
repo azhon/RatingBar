@@ -1,10 +1,10 @@
 
 
-[![Travis](https://img.shields.io/badge/CSDN-阿钟-brightgreen.svg)](http://blog.csdn.net/a_zhon) [![Travis](https://img.shields.io/badge/jcenter-v1.1.0-ff69b4.svg)](https://bintray.com/azhon/azhon/rating-bar)
+[![Travis](https://img.shields.io/badge/CSDN-阿钟-brightgreen.svg)](http://blog.csdn.net/a_zhon) [![Travis](https://img.shields.io/badge/jcenter-v1.3.0-ff69b4.svg)](https://bintray.com/azhon/azhon/rating-bar)
 
 ### 一：仿系统(RatingBar)的一个评分控件
 ### 二：效果图：
-<img src="https://github.com/azhong1011/RatingBar/blob/master/screenshot/rating_bar.gif"/>
+<img src="https://github.com/azhon/RatingBar/blob/master/screenshot/rating_bar.gif"/>
 
 ### 三：使用方法：
 1.在build.gradle中添加依赖
