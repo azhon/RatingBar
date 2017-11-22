@@ -12,5 +12,9 @@ package com.azhong.ratingbar;
 
 
 public interface OnChangeListener {
+    /**
+     * 星级改变监听
+     * @param star 当前星级
+     */
     void onChange(int star);
 }
