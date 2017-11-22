@@ -9,7 +9,7 @@
 ### 三：使用方法：
 1.在build.gradle中添加依赖
 ```
-compile 'com.azhon:ratingbar:1.2.0'
+compile 'com.azhon:ratingbar:1.3.0'
 ```
 2.布局使用
 ```
@@ -44,10 +44,11 @@ compile 'com.azhon:ratingbar:1.2.0'
     <!--是否可以点击-->
     <attr name="clickable" format="boolean" />
 ```
-## 四：所有版本（version-1.2为目前最新代码）
+## 四：所有版本（version-1.3为目前最新代码）
 
 - [version-1.1](https://github.com/azhong1011/RatingBar/tree/version-1.1)
 - [version-1.2](https://github.com/azhong1011/RatingBar/tree/version-1.2)
+- [version-1.3](https://github.com/azhong1011/RatingBar/tree/version-1.3)
 
 ## 五：博文链接：http://blog.csdn.net/a_zhon/article/details/70214584
 
